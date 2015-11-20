@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04AB2D361BFECFFE005AB924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D351BFECFFE005AB924 /* AppDelegate.swift */; };
+		04AB2D381BFECFFE005AB924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D371BFECFFE005AB924 /* ViewController.swift */; };
+		04AB2D3A1BFECFFE005AB924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB2D391BFECFFE005AB924 /* Assets.xcassets */; };
+		04AB2D3D1BFECFFE005AB924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AB2D3B1BFECFFE005AB924 /* Main.storyboard */; };
+		04AB2D481BFECFFE005AB924 /* VoiceCode_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D471BFECFFE005AB924 /* VoiceCode_MonitorTests.swift */; };
+		04AB2D531BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04AB2D441BFECFFE005AB924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04AB2D2A1BFECFFE005AB924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04AB2D311BFECFFE005AB924;
+			remoteInfo = "VoiceCode Monitor";
+		};
+		04AB2D4F1BFECFFE005AB924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04AB2D2A1BFECFFE005AB924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04AB2D311BFECFFE005AB924;
+			remoteInfo = "VoiceCode Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoiceCode Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AB2D351BFECFFE005AB924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04AB2D371BFECFFE005AB924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04AB2D391BFECFFE005AB924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04AB2D3C1BFECFFE005AB924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04AB2D3E1BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AB2D431BFECFFE005AB924 /* VoiceCode MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VoiceCode MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AB2D471BFECFFE005AB924 /* VoiceCode_MonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCode_MonitorTests.swift; sourceTree = "<group>"; };
+		04AB2D491BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AB2D4E1BFECFFE005AB924 /* VoiceCode MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VoiceCode MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCode_MonitorUITests.swift; sourceTree = "<group>"; };
+		04AB2D541BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04AB2D2F1BFECFFE005AB924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AB2D401BFECFFE005AB924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AB2D4B1BFECFFE005AB924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04AB2D291BFECFFE005AB924 = {
+			isa = PBXGroup;
+			children = (
+				04AB2D341BFECFFE005AB924 /* VoiceCode Monitor */,
+				04AB2D461BFECFFE005AB924 /* VoiceCode MonitorTests */,
+				04AB2D511BFECFFE005AB924 /* VoiceCode MonitorUITests */,
+				04AB2D331BFECFFE005AB924 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04AB2D331BFECFFE005AB924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */,
+				04AB2D431BFECFFE005AB924 /* VoiceCode MonitorTests.xctest */,
+				04AB2D4E1BFECFFE005AB924 /* VoiceCode MonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04AB2D341BFECFFE005AB924 /* VoiceCode Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				04AB2D351BFECFFE005AB924 /* AppDelegate.swift */,
+				04AB2D371BFECFFE005AB924 /* ViewController.swift */,
+				04AB2D391BFECFFE005AB924 /* Assets.xcassets */,
+				04AB2D3B1BFECFFE005AB924 /* Main.storyboard */,
+				04AB2D3E1BFECFFE005AB924 /* Info.plist */,
+			);
+			path = "VoiceCode Monitor";
+			sourceTree = "<group>";
+		};
+		04AB2D461BFECFFE005AB924 /* VoiceCode MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				04AB2D471BFECFFE005AB924 /* VoiceCode_MonitorTests.swift */,
+				04AB2D491BFECFFE005AB924 /* Info.plist */,
+			);
+			path = "VoiceCode MonitorTests";
+			sourceTree = "<group>";
+		};
+		04AB2D511BFECFFE005AB924 /* VoiceCode MonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */,
+				04AB2D541BFECFFE005AB924 /* Info.plist */,
+			);
+			path = "VoiceCode MonitorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04AB2D571BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode Monitor" */;
+			buildPhases = (
+				04AB2D2E1BFECFFE005AB924 /* Sources */,
+				04AB2D2F1BFECFFE005AB924 /* Frameworks */,
+				04AB2D301BFECFFE005AB924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VoiceCode Monitor";
+			productName = "VoiceCode Monitor";
+			productReference = 04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04AB2D421BFECFFE005AB924 /* VoiceCode MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04AB2D5A1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorTests" */;
+			buildPhases = (
+				04AB2D3F1BFECFFE005AB924 /* Sources */,
+				04AB2D401BFECFFE005AB924 /* Frameworks */,
+				04AB2D411BFECFFE005AB924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04AB2D451BFECFFE005AB924 /* PBXTargetDependency */,
+			);
+			name = "VoiceCode MonitorTests";
+			productName = "VoiceCode MonitorTests";
+			productReference = 04AB2D431BFECFFE005AB924 /* VoiceCode MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04AB2D4D1BFECFFE005AB924 /* VoiceCode MonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04AB2D5D1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorUITests" */;
+			buildPhases = (
+				04AB2D4A1BFECFFE005AB924 /* Sources */,
+				04AB2D4B1BFECFFE005AB924 /* Frameworks */,
+				04AB2D4C1BFECFFE005AB924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04AB2D501BFECFFE005AB924 /* PBXTargetDependency */,
+			);
+			name = "VoiceCode MonitorUITests";
+			productName = "VoiceCode MonitorUITests";
+			productReference = 04AB2D4E1BFECFFE005AB924 /* VoiceCode MonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04AB2D2A1BFECFFE005AB924 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = VoiceCode;
+				TargetAttributes = {
+					04AB2D311BFECFFE005AB924 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					04AB2D421BFECFFE005AB924 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 04AB2D311BFECFFE005AB924;
+					};
+					04AB2D4D1BFECFFE005AB924 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 04AB2D311BFECFFE005AB924;
+					};
+				};
+			};
+			buildConfigurationList = 04AB2D2D1BFECFFE005AB924 /* Build configuration list for PBXProject "VoiceCode Monitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04AB2D291BFECFFE005AB924;
+			productRefGroup = 04AB2D331BFECFFE005AB924 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */,
+				04AB2D421BFECFFE005AB924 /* VoiceCode MonitorTests */,
+				04AB2D4D1BFECFFE005AB924 /* VoiceCode MonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04AB2D301BFECFFE005AB924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AB2D3A1BFECFFE005AB924 /* Assets.xcassets in Resources */,
+				04AB2D3D1BFECFFE005AB924 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AB2D411BFECFFE005AB924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AB2D4C1BFECFFE005AB924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04AB2D2E1BFECFFE005AB924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AB2D381BFECFFE005AB924 /* ViewController.swift in Sources */,
+				04AB2D361BFECFFE005AB924 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AB2D3F1BFECFFE005AB924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AB2D481BFECFFE005AB924 /* VoiceCode_MonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04AB2D4A1BFECFFE005AB924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AB2D531BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04AB2D451BFECFFE005AB924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */;
+			targetProxy = 04AB2D441BFECFFE005AB924 /* PBXContainerItemProxy */;
+		};
+		04AB2D501BFECFFE005AB924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */;
+			targetProxy = 04AB2D4F1BFECFFE005AB924 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04AB2D3B1BFECFFE005AB924 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04AB2D3C1BFECFFE005AB924 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04AB2D551BFECFFE005AB924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04AB2D561BFECFFE005AB924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04AB2D581BFECFFE005AB924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VoiceCode Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04AB2D591BFECFFE005AB924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VoiceCode Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04AB2D5B1BFECFFE005AB924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VoiceCode MonitorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceCode Monitor.app/Contents/MacOS/VoiceCode Monitor";
+			};
+			name = Debug;
+		};
+		04AB2D5C1BFECFFE005AB924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VoiceCode MonitorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceCode Monitor.app/Contents/MacOS/VoiceCode Monitor";
+			};
+			name = Release;
+		};
+		04AB2D5E1BFECFFE005AB924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VoiceCode MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "VoiceCode Monitor";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		04AB2D5F1BFECFFE005AB924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VoiceCode MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "VoiceCode Monitor";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04AB2D2D1BFECFFE005AB924 /* Build configuration list for PBXProject "VoiceCode Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AB2D551BFECFFE005AB924 /* Debug */,
+				04AB2D561BFECFFE005AB924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04AB2D571BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AB2D581BFECFFE005AB924 /* Debug */,
+				04AB2D591BFECFFE005AB924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04AB2D5A1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AB2D5B1BFECFFE005AB924 /* Debug */,
+				04AB2D5C1BFECFFE005AB924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04AB2D5D1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AB2D5E1BFECFFE005AB924 /* Debug */,
+				04AB2D5F1BFECFFE005AB924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04AB2D2A1BFECFFE005AB924 /* Project object */;
+}
