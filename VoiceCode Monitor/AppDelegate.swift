@@ -27,20 +27,44 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationActivated(notification: NSNotification!) {
-        print(notification.object?.frontmostApplication!!.localizedName)
+        let application = notification.object?.frontmostApplication
+        let result = [
+            "event": "applicationChanged",
+            "bundleId": application!!.bundleIdentifier ?? "",
+            "name": application!!.localizedName ?? ""
+        ]
+        
+        self.sendToVoiceCode(self.toJson(result))
+
     }
     
     func leftClickHandler(event: NSEvent) {
-        print(event)
-        self.sendToVoiceCode("somethin")
+        let result = [
+            "event": "leftClick",
+            "x": event.absoluteX,
+            "y": event.absoluteY
+        ]
+        
+        self.sendToVoiceCode(self.toJson(result))
+    }
+    
+    func toJson(object: NSObject) -> NSString {
+        do {
+            let jsonData = try NSJSONSerialization.dataWithJSONObject(object, options: NSJSONWritingOptions.PrettyPrinted)
+            let jsonString = NSString(data: jsonData, encoding: NSUTF8StringEncoding)! as String
+            return jsonString
+        } catch let error as NSError {
+            print(error)
+            return ""
+        }
     }
     
     func sendToVoiceCode(payload: NSString) {
-        self.exec("echo \"hello\" | nc -U /tmp/voicecode_events.sock")
+        print(payload)
+        self.exec("echo '\(payload)' | nc -U /tmp/voicecode_events.sock")
     }
     
-    func exec(cmdname: String) -> NSString
-    {
+    func exec(cmdname: String) -> NSString {
         var result = ""
         let task = NSTask()
         task.launchPath = "/bin/sh"
@@ -57,9 +81,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         task.waitUntilExit()
-        let status = task.terminationStatus
-        
-        print(status)
+//        let status = task.terminationStatus
+//        print(status)
         
         return result
     }
