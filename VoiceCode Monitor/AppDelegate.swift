@@ -39,12 +39,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func leftClickHandler(event: NSEvent) {
+        let location = NSEvent.mouseLocation()
         let result = [
             "event": "leftClick",
-            "x": event.absoluteX,
-            "y": event.absoluteY
+            "x": location.x,
+            "y": location.y,
+            "windowNumber": event.windowNumber
         ]
-        
         self.sendToVoiceCode(self.toJson(result))
     }
     
