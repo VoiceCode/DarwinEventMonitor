@@ -44,6 +44,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             "event": "leftClick",
             "x": location.x,
             "y": location.y,
+            "windowRelativeX": event.locationInWindow.x,
+            "windowRelativeY": event.locationInWindow.y,
             "windowNumber": event.windowNumber
         ]
         self.sendToVoiceCode(self.toJson(result))
