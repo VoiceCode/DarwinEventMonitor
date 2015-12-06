@@ -13,6 +13,8 @@
 		04AB2D3D1BFECFFE005AB924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AB2D3B1BFECFFE005AB924 /* Main.storyboard */; };
 		04AB2D481BFECFFE005AB924 /* VoiceCode_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D471BFECFFE005AB924 /* VoiceCode_MonitorTests.swift */; };
 		04AB2D531BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */; };
+		04BC557A1C124C9500CAB753 /* PFAssistive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; };
+		04BC557B1C124C9500CAB753 /* PFAssistive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; };
 		18179EF4ECC42795E4718AEE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9568008A754B0EA656576848 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		04AB2D4E1BFECFFE005AB924 /* VoiceCode MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VoiceCode MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCode_MonitorUITests.swift; sourceTree = "<group>"; };
 		04AB2D541BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BC55791C124C9500CAB753 /* PFAssistive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PFAssistive.framework; path = Frameworks/PFAssistive.framework; sourceTree = "<group>"; };
+		04BC557C1C124DC100CAB753 /* DarwinEventMonitor-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DarwinEventMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
 		37E92B471FF6751F71F7D0DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		77E374E6D55ADF41DBA90E31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9568008A754B0EA656576848 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BC557A1C124C9500CAB753 /* PFAssistive.framework in Frameworks */,
 				18179EF4ECC42795E4718AEE /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BC557B1C124C9500CAB753 /* PFAssistive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,7 @@
 				04AB2D391BFECFFE005AB924 /* Assets.xcassets */,
 				04AB2D3B1BFECFFE005AB924 /* Main.storyboard */,
 				04AB2D3E1BFECFFE005AB924 /* Info.plist */,
+				04BC557C1C124DC100CAB753 /* DarwinEventMonitor-Bridging-Header.h */,
 			);
 			path = "VoiceCode Monitor";
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 		D19E223FD6DE2BF402750726 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04BC55791C124C9500CAB753 /* PFAssistive.framework */,
 				9568008A754B0EA656576848 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -460,11 +468,20 @@
 			baseConfigurationReference = 77E374E6D55ADF41DBA90E31 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/PFAssistive.framework/Headers";
 				INFOPLIST_FILE = "VoiceCode Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.voicecode.darwin-monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceCode Monitor/DarwinEventMonitor-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -473,11 +490,20 @@
 			baseConfigurationReference = 37E92B471FF6751F71F7D0DE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/PFAssistive.framework/Headers";
 				INFOPLIST_FILE = "VoiceCode Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.voicecode.darwin-monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceCode Monitor/DarwinEventMonitor-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -486,6 +512,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "VoiceCode MonitorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";
@@ -499,6 +529,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "VoiceCode MonitorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";

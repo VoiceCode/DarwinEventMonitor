@@ -7,19 +7,61 @@
 //
 
 import Cocoa
+import PFAssistive
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
         NSWorkspace.sharedWorkspace()
             .notificationCenter.addObserver(self,
                 selector: "applicationActivated:",
                 name: NSWorkspaceDidActivateApplicationNotification, object: nil)
         
         NSEvent.addGlobalMonitorForEventsMatchingMask(.LeftMouseDownMask, handler: self.leftClickHandler)
+        self.observeDragonStatusWindow()
+    }
+    
+    func observeDragonStatusWindow() {
+        let rt = self.findRecognizedTextElement()
+        if (rt != nil) {
+            let observer = PFObserver(bundleIdentifier: "com.dragon.dictate", notificationDelegate: self, callbackSelector: Selector("recognizedTextChanged:notification:element:contextInfo:"))
+            observer.registerForNotification(kAXValueChangedNotification, fromElement: rt, contextInfo: nil)
+        }
+    }
+
+    func recognizedTextChanged(observer: PFObserver, notification: String, element: PFUIElement, contextInfo: AnyObject) {
+        let result = [
+            "event": "recognizedText",
+            "phrase": element.AXValue
+        ]
+        
+        self.sendToVoiceCode(self.toJson(result))
+    }
+    func findRecognizedTextElement() -> PFUIElement? {
+        let window = self.findDragonStatusWindow()
+        if (window != nil) {
+            for child in window!.AXChildren {
+                if (child.existsValueForAttribute("AXDescription")) {
+                    if (child.AXDescription == "Recognized Commands") {
+                        return child as? PFUIElement
+                    }
+                }
+            }
+        }
+        return nil
+    }
+    
+    func findDragonStatusWindow() -> PFUIElement? {
+        let dragon: PFApplicationUIElement = PFApplicationUIElement(bundleIdentifier: "com.dragon.dictate", delegate: nil)
+        for child in dragon.AXChildren {
+            if (child.existsValueForAttribute("AXTitle")) {
+                if (child.AXTitle == "Dictate Status Window") {
+                    return child as? PFUIElement
+                }
+            }
+        }
+        return nil
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -55,7 +97,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         do {
             let jsonData = try NSJSONSerialization.dataWithJSONObject(object, options: NSJSONWritingOptions.PrettyPrinted)
             let jsonString = NSString(data: jsonData, encoding: NSUTF8StringEncoding)! as String
-            return jsonString
+            let normalized = jsonString.stringByReplacingOccurrencesOfString("\"", withString: "\\\"")
+            return normalized
         } catch let error as NSError {
             print(error)
             return ""
@@ -64,7 +107,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func sendToVoiceCode(payload: NSString) {
         print(payload)
-        self.exec("echo '\(payload)' | nc -U /tmp/voicecode_events.sock")
+        self.exec("echo \"\(payload)\" | nc -U /tmp/voicecode_events.sock")
     }
     
     func exec(cmdname: String) -> NSString {
@@ -89,5 +132,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         return result
     }
+    
+//    func watchDragon() {
+//        let dragon = NSRunningApplication.runningApplicationsWithBundleIdentifier("com.dragon.dictate")
+//        print(dragon)
+//    }
     
 }
