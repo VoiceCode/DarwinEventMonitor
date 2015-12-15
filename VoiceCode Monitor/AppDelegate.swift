@@ -19,15 +19,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 name: NSWorkspaceDidActivateApplicationNotification, object: nil)
         
         NSEvent.addGlobalMonitorForEventsMatchingMask(.LeftMouseDownMask, handler: self.leftClickHandler)
-        self.observeDragonStatusWindow()
+        self.startObservingDragon()
     }
     
-    func observeDragonStatusWindow() {
-        let rt = self.findRecognizedTextElement()
-        if (rt != nil) {
-            let observer = PFObserver(bundleIdentifier: "com.dragon.dictate", notificationDelegate: self, callbackSelector: Selector("recognizedTextChanged:notification:element:contextInfo:"))
-            observer.registerForNotification(kAXValueChangedNotification, fromElement: rt, contextInfo: nil)
+    func startObservingDragon() {
+        print("checking dragon")
+        if self.observeDragonStatusWindow() {
+            // cool
         }
+        else {
+            // try again in 3 seconds
+            let delta: Int64 = 3 * Int64(NSEC_PER_SEC)
+            let time = dispatch_time(DISPATCH_TIME_NOW, delta)
+            
+            dispatch_after(time, dispatch_get_main_queue(), {
+                self.startObservingDragon()
+            })
+        }
+
+    }
+    
+    func observeDragonStatusWindow() -> DarwinBoolean {
+        if self.applicationIsRunning("com.dragon.dictate") {
+            let rt = self.findRecognizedTextElement()
+            if (rt != nil) {
+                let observer = PFObserver(bundleIdentifier: "com.dragon.dictate", notificationDelegate: self, callbackSelector: Selector("recognizedTextChanged:notification:element:contextInfo:"))
+                observer.registerForNotification(kAXValueChangedNotification, fromElement: rt, contextInfo: nil)
+                return true
+            }
+        }
+        return false
     }
 
     func recognizedTextChanged(observer: PFObserver, notification: String, element: PFUIElement, contextInfo: AnyObject) {
@@ -54,14 +75,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func findDragonStatusWindow() -> PFUIElement? {
         let dragon: PFApplicationUIElement = PFApplicationUIElement(bundleIdentifier: "com.dragon.dictate", delegate: nil)
-        for child in dragon.AXChildren {
-            if (child.existsValueForAttribute("AXTitle")) {
-                if (child.AXTitle == "Dictate Status Window") {
-                    return child as? PFUIElement
+        if (dragon.existsValueForAttribute("AXChildren")) {
+            for child in dragon.AXChildren {
+                if (child.existsValueForAttribute("AXTitle")) {
+                    if (child.AXTitle == "Dictate Status Window") {
+                        return child as? PFUIElement
+                    }
                 }
             }
         }
         return nil
+    }
+    
+    func applicationIsRunning(bundleIdentifier: NSString) -> DarwinBoolean {
+        for app in NSWorkspace.sharedWorkspace().runningApplications {
+            if (app.bundleIdentifier == bundleIdentifier) {
+                return true
+            }
+        }
+        return false
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
