@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoiceCode Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AB2D321BFECFFE005AB924 /* Darwin Event Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Darwin Event Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB2D351BFECFFE005AB924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AB2D371BFECFFE005AB924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04AB2D391BFECFFE005AB924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		04AB2D331BFECFFE005AB924 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */,
+				04AB2D321BFECFFE005AB924 /* Darwin Event Monitor.app */,
 				04AB2D431BFECFFE005AB924 /* Darwin Event Monitor.xctest */,
 				04AB2D4E1BFECFFE005AB924 /* Darwin Event Monitor.xctest */,
 			);
@@ -177,7 +177,7 @@
 			);
 			name = "Darwin Event Monitor";
 			productName = "VoiceCode Monitor";
-			productReference = 04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */;
+			productReference = 04AB2D321BFECFFE005AB924 /* Darwin Event Monitor.app */;
 			productType = "com.apple.product-type.application";
 		};
 		04AB2D421BFECFFE005AB924 /* Darwin Event MonitorTests */ = {

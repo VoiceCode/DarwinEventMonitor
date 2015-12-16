@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/triumph/projects/voiceCode/swift/VoiceCode Monitor/Darwin Event Monitor.xcodeproj">
+      location = "group:Darwin Event Monitor.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
