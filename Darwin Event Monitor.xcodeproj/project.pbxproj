@@ -42,10 +42,10 @@
 		04AB2D391BFECFFE005AB924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AB2D3C1BFECFFE005AB924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04AB2D3E1BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04AB2D431BFECFFE005AB924 /* VoiceCode MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VoiceCode MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AB2D431BFECFFE005AB924 /* Darwin Event Monitor.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Darwin Event Monitor.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB2D471BFECFFE005AB924 /* VoiceCode_MonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCode_MonitorTests.swift; sourceTree = "<group>"; };
 		04AB2D491BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04AB2D4E1BFECFFE005AB924 /* VoiceCode MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VoiceCode MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AB2D4E1BFECFFE005AB924 /* Darwin Event Monitor.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Darwin Event Monitor.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCode_MonitorUITests.swift; sourceTree = "<group>"; };
 		04AB2D541BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BC55791C124C9500CAB753 /* PFAssistive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PFAssistive.framework; path = Frameworks/PFAssistive.framework; sourceTree = "<group>"; };
@@ -86,9 +86,9 @@
 		04AB2D291BFECFFE005AB924 = {
 			isa = PBXGroup;
 			children = (
-				04AB2D341BFECFFE005AB924 /* VoiceCode Monitor */,
-				04AB2D461BFECFFE005AB924 /* VoiceCode MonitorTests */,
-				04AB2D511BFECFFE005AB924 /* VoiceCode MonitorUITests */,
+				04AB2D341BFECFFE005AB924 /* Darwin Event Monitor */,
+				04AB2D461BFECFFE005AB924 /* Darwin Event Monitor Tests */,
+				04AB2D511BFECFFE005AB924 /* Darwin Event MonitorUITests */,
 				04AB2D331BFECFFE005AB924 /* Products */,
 				F97B89CC00854055D3AFE770 /* Pods */,
 				D19E223FD6DE2BF402750726 /* Frameworks */,
@@ -99,13 +99,13 @@
 			isa = PBXGroup;
 			children = (
 				04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */,
-				04AB2D431BFECFFE005AB924 /* VoiceCode MonitorTests.xctest */,
-				04AB2D4E1BFECFFE005AB924 /* VoiceCode MonitorUITests.xctest */,
+				04AB2D431BFECFFE005AB924 /* Darwin Event Monitor.xctest */,
+				04AB2D4E1BFECFFE005AB924 /* Darwin Event Monitor.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		04AB2D341BFECFFE005AB924 /* VoiceCode Monitor */ = {
+		04AB2D341BFECFFE005AB924 /* Darwin Event Monitor */ = {
 			isa = PBXGroup;
 			children = (
 				04AB2D351BFECFFE005AB924 /* AppDelegate.swift */,
@@ -115,24 +115,27 @@
 				04AB2D3E1BFECFFE005AB924 /* Info.plist */,
 				04BC557C1C124DC100CAB753 /* DarwinEventMonitor-Bridging-Header.h */,
 			);
+			name = "Darwin Event Monitor";
 			path = "VoiceCode Monitor";
 			sourceTree = "<group>";
 		};
-		04AB2D461BFECFFE005AB924 /* VoiceCode MonitorTests */ = {
+		04AB2D461BFECFFE005AB924 /* Darwin Event Monitor Tests */ = {
 			isa = PBXGroup;
 			children = (
 				04AB2D471BFECFFE005AB924 /* VoiceCode_MonitorTests.swift */,
 				04AB2D491BFECFFE005AB924 /* Info.plist */,
 			);
+			name = "Darwin Event Monitor Tests";
 			path = "VoiceCode MonitorTests";
 			sourceTree = "<group>";
 		};
-		04AB2D511BFECFFE005AB924 /* VoiceCode MonitorUITests */ = {
+		04AB2D511BFECFFE005AB924 /* Darwin Event MonitorUITests */ = {
 			isa = PBXGroup;
 			children = (
 				04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */,
 				04AB2D541BFECFFE005AB924 /* Info.plist */,
 			);
+			name = "Darwin Event MonitorUITests";
 			path = "VoiceCode MonitorUITests";
 			sourceTree = "<group>";
 		};
@@ -157,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */ = {
+		04AB2D311BFECFFE005AB924 /* Darwin Event Monitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04AB2D571BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode Monitor" */;
+			buildConfigurationList = 04AB2D571BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event Monitor" */;
 			buildPhases = (
 				198D2EBB3D93E01E9BE696C4 /* Check Pods Manifest.lock */,
 				04AB2D2E1BFECFFE005AB924 /* Sources */,
@@ -172,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = "VoiceCode Monitor";
+			name = "Darwin Event Monitor";
 			productName = "VoiceCode Monitor";
 			productReference = 04AB2D321BFECFFE005AB924 /* VoiceCode Monitor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04AB2D421BFECFFE005AB924 /* VoiceCode MonitorTests */ = {
+		04AB2D421BFECFFE005AB924 /* Darwin Event MonitorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04AB2D5A1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorTests" */;
+			buildConfigurationList = 04AB2D5A1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event MonitorTests" */;
 			buildPhases = (
 				04AB2D3F1BFECFFE005AB924 /* Sources */,
 				04AB2D401BFECFFE005AB924 /* Frameworks */,
@@ -190,14 +193,14 @@
 			dependencies = (
 				04AB2D451BFECFFE005AB924 /* PBXTargetDependency */,
 			);
-			name = "VoiceCode MonitorTests";
+			name = "Darwin Event MonitorTests";
 			productName = "VoiceCode MonitorTests";
-			productReference = 04AB2D431BFECFFE005AB924 /* VoiceCode MonitorTests.xctest */;
+			productReference = 04AB2D431BFECFFE005AB924 /* Darwin Event Monitor.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04AB2D4D1BFECFFE005AB924 /* VoiceCode MonitorUITests */ = {
+		04AB2D4D1BFECFFE005AB924 /* Darwin Event MonitorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04AB2D5D1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorUITests" */;
+			buildConfigurationList = 04AB2D5D1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event MonitorUITests" */;
 			buildPhases = (
 				04AB2D4A1BFECFFE005AB924 /* Sources */,
 				04AB2D4B1BFECFFE005AB924 /* Frameworks */,
@@ -208,9 +211,9 @@
 			dependencies = (
 				04AB2D501BFECFFE005AB924 /* PBXTargetDependency */,
 			);
-			name = "VoiceCode MonitorUITests";
+			name = "Darwin Event MonitorUITests";
 			productName = "VoiceCode MonitorUITests";
-			productReference = 04AB2D4E1BFECFFE005AB924 /* VoiceCode MonitorUITests.xctest */;
+			productReference = 04AB2D4E1BFECFFE005AB924 /* Darwin Event Monitor.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04AB2D2D1BFECFFE005AB924 /* Build configuration list for PBXProject "VoiceCode Monitor" */;
+			buildConfigurationList = 04AB2D2D1BFECFFE005AB924 /* Build configuration list for PBXProject "Darwin Event Monitor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -249,9 +252,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */,
-				04AB2D421BFECFFE005AB924 /* VoiceCode MonitorTests */,
-				04AB2D4D1BFECFFE005AB924 /* VoiceCode MonitorUITests */,
+				04AB2D311BFECFFE005AB924 /* Darwin Event Monitor */,
+				04AB2D421BFECFFE005AB924 /* Darwin Event MonitorTests */,
+				04AB2D4D1BFECFFE005AB924 /* Darwin Event MonitorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -361,12 +364,12 @@
 /* Begin PBXTargetDependency section */
 		04AB2D451BFECFFE005AB924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */;
+			target = 04AB2D311BFECFFE005AB924 /* Darwin Event Monitor */;
 			targetProxy = 04AB2D441BFECFFE005AB924 /* PBXContainerItemProxy */;
 		};
 		04AB2D501BFECFFE005AB924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04AB2D311BFECFFE005AB924 /* VoiceCode Monitor */;
+			target = 04AB2D311BFECFFE005AB924 /* Darwin Event Monitor */;
 			targetProxy = 04AB2D4F1BFECFFE005AB924 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,7 +483,7 @@
 				INFOPLIST_FILE = "VoiceCode Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.voicecode.darwin-monitor";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Darwin Event Monitor";
 				SWIFT_OBJC_BRIDGING_HEADER = "VoiceCode Monitor/DarwinEventMonitor-Bridging-Header.h";
 			};
 			name = Debug;
@@ -502,7 +505,7 @@
 				INFOPLIST_FILE = "VoiceCode Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.voicecode.darwin-monitor";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Darwin Event Monitor";
 				SWIFT_OBJC_BRIDGING_HEADER = "VoiceCode Monitor/DarwinEventMonitor-Bridging-Header.h";
 			};
 			name = Release;
@@ -519,8 +522,8 @@
 				INFOPLIST_FILE = "VoiceCode MonitorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceCode Monitor.app/Contents/MacOS/VoiceCode Monitor";
+				PRODUCT_NAME = "Darwin Event Monitor";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin Event Monitor.app/Contents/MacOS/Darwin Event Monitor";
 			};
 			name = Debug;
 		};
@@ -536,8 +539,8 @@
 				INFOPLIST_FILE = "VoiceCode MonitorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceCode Monitor.app/Contents/MacOS/VoiceCode Monitor";
+				PRODUCT_NAME = "Darwin Event Monitor";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin Event Monitor.app/Contents/MacOS/Darwin Event Monitor";
 			};
 			name = Release;
 		};
@@ -548,7 +551,7 @@
 				INFOPLIST_FILE = "VoiceCode MonitorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Darwin Event Monitor";
 				TEST_TARGET_NAME = "VoiceCode Monitor";
 				USES_XCTRUNNER = YES;
 			};
@@ -561,7 +564,7 @@
 				INFOPLIST_FILE = "VoiceCode MonitorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Darwin Event Monitor";
 				TEST_TARGET_NAME = "VoiceCode Monitor";
 				USES_XCTRUNNER = YES;
 			};
@@ -570,7 +573,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04AB2D2D1BFECFFE005AB924 /* Build configuration list for PBXProject "VoiceCode Monitor" */ = {
+		04AB2D2D1BFECFFE005AB924 /* Build configuration list for PBXProject "Darwin Event Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04AB2D551BFECFFE005AB924 /* Debug */,
@@ -579,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04AB2D571BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode Monitor" */ = {
+		04AB2D571BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04AB2D581BFECFFE005AB924 /* Debug */,
@@ -588,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04AB2D5A1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorTests" */ = {
+		04AB2D5A1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event MonitorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04AB2D5B1BFECFFE005AB924 /* Debug */,
@@ -597,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04AB2D5D1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "VoiceCode MonitorUITests" */ = {
+		04AB2D5D1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event MonitorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04AB2D5E1BFECFFE005AB924 /* Debug */,

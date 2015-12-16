@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "04AB2D311BFECFFE005AB924"
-               BuildableName = "VoiceCode Monitor.app"
-               BlueprintName = "VoiceCode Monitor"
-               ReferencedContainer = "container:VoiceCode Monitor.xcodeproj">
+               BuildableName = "Darwin Event Monitor.app"
+               BlueprintName = "Darwin Event Monitor"
+               ReferencedContainer = "container:Darwin Event Monitor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "04AB2D421BFECFFE005AB924"
-               BuildableName = "VoiceCode MonitorTests.xctest"
-               BlueprintName = "VoiceCode MonitorTests"
-               ReferencedContainer = "container:VoiceCode Monitor.xcodeproj">
+               BuildableName = "Darwin Event Monitor.xctest"
+               BlueprintName = "Darwin Event MonitorTests"
+               ReferencedContainer = "container:Darwin Event Monitor.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "04AB2D4D1BFECFFE005AB924"
-               BuildableName = "VoiceCode MonitorUITests.xctest"
-               BlueprintName = "VoiceCode MonitorUITests"
-               ReferencedContainer = "container:VoiceCode Monitor.xcodeproj">
+               BuildableName = "Darwin Event Monitor.xctest"
+               BlueprintName = "Darwin Event MonitorUITests"
+               ReferencedContainer = "container:Darwin Event Monitor.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04AB2D311BFECFFE005AB924"
-            BuildableName = "VoiceCode Monitor.app"
-            BlueprintName = "VoiceCode Monitor"
-            ReferencedContainer = "container:VoiceCode Monitor.xcodeproj">
+            BuildableName = "Darwin Event Monitor.app"
+            BlueprintName = "Darwin Event Monitor"
+            ReferencedContainer = "container:Darwin Event Monitor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04AB2D311BFECFFE005AB924"
-            BuildableName = "VoiceCode Monitor.app"
-            BlueprintName = "VoiceCode Monitor"
-            ReferencedContainer = "container:VoiceCode Monitor.xcodeproj">
+            BuildableName = "Darwin Event Monitor.app"
+            BlueprintName = "Darwin Event Monitor"
+            ReferencedContainer = "container:Darwin Event Monitor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04AB2D311BFECFFE005AB924"
-            BuildableName = "VoiceCode Monitor.app"
-            BlueprintName = "VoiceCode Monitor"
-            ReferencedContainer = "container:VoiceCode Monitor.xcodeproj">
+            BuildableName = "Darwin Event Monitor.app"
+            BlueprintName = "Darwin Event Monitor"
+            ReferencedContainer = "container:Darwin Event Monitor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
