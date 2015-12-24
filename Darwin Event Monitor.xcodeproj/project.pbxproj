@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049AB6FE1C2A601A0060689D /* PFAssistive.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04AB2D361BFECFFE005AB924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D351BFECFFE005AB924 /* AppDelegate.swift */; };
 		04AB2D381BFECFFE005AB924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D371BFECFFE005AB924 /* ViewController.swift */; };
 		04AB2D3A1BFECFFE005AB924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB2D391BFECFFE005AB924 /* Assets.xcassets */; };
 		04AB2D3D1BFECFFE005AB924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AB2D3B1BFECFFE005AB924 /* Main.storyboard */; };
 		04AB2D481BFECFFE005AB924 /* VoiceCode_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D471BFECFFE005AB924 /* VoiceCode_MonitorTests.swift */; };
 		04AB2D531BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */; };
-		04BC557A1C124C9500CAB753 /* PFAssistive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; };
+		04BC557A1C124C9500CAB753 /* PFAssistive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		04BC557B1C124C9500CAB753 /* PFAssistive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; };
 		18179EF4ECC42795E4718AEE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9568008A754B0EA656576848 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,19 @@
 			remoteInfo = "VoiceCode Monitor";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		049AB6FD1C2A5FF00060689D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				049AB6FE1C2A601A0060689D /* PFAssistive.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04AB2D321BFECFFE005AB924 /* Darwin Event Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Darwin Event Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,10 +180,11 @@
 			buildPhases = (
 				198D2EBB3D93E01E9BE696C4 /* Check Pods Manifest.lock */,
 				04AB2D2E1BFECFFE005AB924 /* Sources */,
-				04AB2D2F1BFECFFE005AB924 /* Frameworks */,
-				04AB2D301BFECFFE005AB924 /* Resources */,
 				C0F20F67707B4A913BF26AC6 /* Embed Pods Frameworks */,
 				47E4F2642A28686DDFE8E8D3 /* Copy Pods Resources */,
+				049AB6FD1C2A5FF00060689D /* CopyFiles */,
+				04AB2D301BFECFFE005AB924 /* Resources */,
+				04AB2D2F1BFECFFE005AB924 /* Frameworks */,
 			);
 			buildRules = (
 			);

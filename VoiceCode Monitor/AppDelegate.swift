@@ -44,17 +44,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let rt = self.findRecognizedTextElement()
             if (rt != nil) {
                 let observer = PFObserver(bundleIdentifier: "com.dragon.dictate", notificationDelegate: self, callbackSelector: Selector("recognizedTextChanged:notification:element:contextInfo:"))
-                observer.registerForNotification(kAXValueChangedNotification, fromElement: rt, contextInfo: nil)
+                observer!.registerForNotification(kAXValueChangedNotification, fromElement: rt, contextInfo: nil)
                 return true
             }
         }
         return false
     }
 
-    func recognizedTextChanged(observer: PFObserver, notification: String, element: PFUIElement, contextInfo: AnyObject) {
+    func recognizedTextChanged(observer: PFObserver, notification: String, element: PFUIElement!, contextInfo: AnyObject) {
+        var phrase = ""
+        
+        if (element.existsValueForAttribute("AXValue")) {
+            phrase = (element.AXValue as? String)!
+        }
+        else {
+            phrase = ""
+        }
+        
         let result = [
             "event": "recognizedText",
-            "phrase": element.AXValue
+            "phrase": phrase
         ]
         
         self.sendToVoiceCode(self.toJson(result))
@@ -62,10 +71,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func findRecognizedTextElement() -> PFUIElement? {
         let window = self.findDragonStatusWindow()
         if (window != nil) {
-            for child in window!.AXChildren {
+            for child in window!.AXChildren! {
                 if (child.existsValueForAttribute("AXDescription")) {
                     if (child.AXDescription == "Recognized Commands") {
-                        return child as? PFUIElement
+                        return child
                     }
                 }
             }
@@ -74,12 +83,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func findDragonStatusWindow() -> PFUIElement? {
-        let dragon: PFApplicationUIElement = PFApplicationUIElement(bundleIdentifier: "com.dragon.dictate", delegate: nil)
+        let dragon: PFApplicationUIElement = PFApplicationUIElement(bundleIdentifier: "com.dragon.dictate", delegate: nil)!
         if (dragon.existsValueForAttribute("AXChildren")) {
-            for child in dragon.AXChildren {
+            for child in dragon.AXChildren! {
                 if (child.existsValueForAttribute("AXTitle")) {
                     if (child.AXTitle == "Dictate Status Window") {
-                        return child as? PFUIElement
+                        return child
                     }
                 }
             }
