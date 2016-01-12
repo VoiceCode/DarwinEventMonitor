@@ -149,6 +149,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func sendToVoiceCode(payload: NSString) {
         print(payload)
         self.exec("echo \"\(payload)\" | nc -U /tmp/voicecode_events.sock")
+        self.exec("echo \"\(payload)\" | nc -U /tmp/voicecode_events_dev.sock")
     }
     
     func exec(cmdname: String) -> NSString {
