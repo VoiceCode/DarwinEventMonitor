@@ -15,10 +15,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         NSWorkspace.sharedWorkspace()
             .notificationCenter.addObserver(self,
-                selector: "applicationActivated:",
+                selector: #selector(AppDelegate.applicationActivated(_:)),
                 name: NSWorkspaceDidActivateApplicationNotification, object: nil)
         
         NSEvent.addGlobalMonitorForEventsMatchingMask(.LeftMouseDownMask, handler: self.leftClickHandler)
+        NSEvent.addGlobalMonitorForEventsMatchingMask(.KeyUpMask, handler: self.keyUpHandler)
         self.startObservingDragon()
     }
     
@@ -43,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if self.applicationIsRunning("com.dragon.dictate") {
             let rt = self.findRecognizedTextElement()
             if (rt != nil) {
-                let observer = PFObserver(bundleIdentifier: "com.dragon.dictate", notificationDelegate: self, callbackSelector: Selector("recognizedTextChanged:notification:element:contextInfo:"))
+                let observer = PFObserver(bundleIdentifier: "com.dragon.dictate", notificationDelegate: self, callbackSelector: #selector(AppDelegate.recognizedTextChanged(_:notification:element:contextInfo:)))
                 observer!.registerForNotification(kAXValueChangedNotification, fromElement: rt, contextInfo: nil)
                 return true
             }
@@ -131,6 +132,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             "windowRelativeY": event.locationInWindow.y,
             "windowNumber": event.windowNumber
         ]
+        self.sendToVoiceCode(self.toJson(result))
+    }
+    func keyUpHandler(event: NSEvent) {
+        print(event)
+        var flags = [String]()
+        if (event.modifierFlags.contains(.CommandKeyMask)) {
+            flags += ["command"]
+        }
+        if (event.modifierFlags.contains(.ControlKeyMask)) {
+            flags += ["control"]
+        }
+        if (event.modifierFlags.contains(.ShiftKeyMask)) {
+            flags += ["shift"]
+        }
+        if (event.modifierFlags.contains(.AlternateKeyMask)) {
+            flags += ["option"]
+        }
+        let result = [
+            "event": "keyUp",
+            "windowNumber": event.windowNumber,
+            "keyCode": String(event.keyCode),
+            "flags": flags,
+//            "characters": String(event.characters ?? ""),
+//            "charactersIgnoringModifiers": String(event.charactersIgnoringModifiers ?? ""),
+            "x": event.locationInWindow.x,
+            "y": event.locationInWindow.y,
+            "type": String(event.type),
+            "timestamp": event.timestamp
+        ]
+        print(result)
         self.sendToVoiceCode(self.toJson(result))
     }
     
