@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "8de8de202b308b18fc1a7fc5a6d8e2bb"
+build_time: [528981715, 987307000]
+inputs:
+  "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [528859818, 0]

@@ -1,0 +1,1 @@
+/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/DerivedData/Darwin Event Monitor/Build/Intermediates/ArchiveIntermediates/VoiceCode Monitor/InstallationBuildProductsLocation/Applications/Darwin Event Monitor.app

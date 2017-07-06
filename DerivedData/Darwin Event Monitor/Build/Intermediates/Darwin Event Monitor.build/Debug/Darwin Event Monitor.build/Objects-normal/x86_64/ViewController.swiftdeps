@@ -1,0 +1,95 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C20Darwin_Event_Monitor14ViewController"
+provides-member:
+- ["C20Darwin_Event_Monitor14ViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+depends-top-level:
+- "ViewController"
+- "NSViewController"
+depends-member:
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["CSo11NSResponder", "init"]
+- ["CSo11NSResponder", "viewDidLoad"]
+- ["PSo17NSSeguePerforming", "init"]
+- ["PSo17NSSeguePerforming", "viewDidLoad"]
+- ["PSo17NSSeguePerforming", ""]
+- ["PSo33NSUserInterfaceItemIdentification", "init"]
+- ["PSo33NSUserInterfaceItemIdentification", "viewDidLoad"]
+- ["PSo33NSUserInterfaceItemIdentification", ""]
+- ["CSo16NSViewController", "init"]
+- ["CSo16NSViewController", "viewDidLoad"]
+- ["CSo16NSViewController", ""]
+- ["C20Darwin_Event_Monitor14ViewController", "deinit"]
+- ["C20Darwin_Event_Monitor14ViewController", "init"]
+- ["C20Darwin_Event_Monitor14ViewController", "viewDidLoad"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo11NSResponder"
+- "PSo17NSSeguePerforming"
+- "PSo33NSUserInterfaceItemIdentification"
+- "CSo16NSViewController"
+- "C20Darwin_Event_Monitor14ViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/VoiceCode Monitor/DarwinEventMonitor-Bridging-Header.h"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/Frameworks/PFAssistive.framework/Headers/PFAssistive.h"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/Frameworks/PFAssistive.framework/Modules/module.modulemap"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/Frameworks/PFAssistive.framework/Headers/PFUIElement.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/Frameworks/PFAssistive.framework/Headers/PFObserver.h"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/Frameworks/PFAssistive.framework/Headers/PFAssistiveError.h"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/DerivedData/Darwin Event Monitor/Build/Products/Debug/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/DerivedData/Darwin Event Monitor/Build/Products/Debug/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/DerivedData/Darwin Event Monitor/Build/Products/Debug/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/DerivedData/Darwin Event Monitor/Build/Products/Debug/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+interface-hash: "d1558bf90c26baa5eb09f04324ed7d39"

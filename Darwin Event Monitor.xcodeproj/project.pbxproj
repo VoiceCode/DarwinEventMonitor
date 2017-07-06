@@ -16,7 +16,9 @@
 		04AB2D531BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2D521BFECFFE005AB924 /* VoiceCode_MonitorUITests.swift */; };
 		04BC557A1C124C9500CAB753 /* PFAssistive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		04BC557B1C124C9500CAB753 /* PFAssistive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC55791C124C9500CAB753 /* PFAssistive.framework */; };
-		18179EF4ECC42795E4718AEE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9568008A754B0EA656576848 /* Pods.framework */; };
+		57FEB897B1C3BEC699D4243A /* Pods_Darwin_Event_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C30C168BD182C97E3F47266 /* Pods_Darwin_Event_Monitor.framework */; };
+		B301E671850C9C7FCD5B0904 /* Pods_Darwin_Event_MonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB101FDD082DBCF5AAD2E80 /* Pods_Darwin_Event_MonitorUITests.framework */; };
+		F4FAA14DDBB6B56D3CC154F2 /* Pods_Darwin_Event_MonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5E21EE3C83464BBDC508BE /* Pods_Darwin_Event_MonitorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +53,7 @@
 
 /* Begin PBXFileReference section */
 		04AB2D321BFECFFE005AB924 /* Darwin Event Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Darwin Event Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04AB2D351BFECFFE005AB924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04AB2D351BFECFFE005AB924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
 		04AB2D371BFECFFE005AB924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04AB2D391BFECFFE005AB924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AB2D3C1BFECFFE005AB924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,9 +66,16 @@
 		04AB2D541BFECFFE005AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BC55791C124C9500CAB753 /* PFAssistive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PFAssistive.framework; path = Frameworks/PFAssistive.framework; sourceTree = "<group>"; };
 		04BC557C1C124DC100CAB753 /* DarwinEventMonitor-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DarwinEventMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
-		37E92B471FF6751F71F7D0DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		77E374E6D55ADF41DBA90E31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1C30C168BD182C97E3F47266 /* Pods_Darwin_Event_Monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Darwin_Event_Monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		482DEADB4BFA3539396713C4 /* Pods-Darwin Event MonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darwin Event MonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Darwin Event MonitorTests/Pods-Darwin Event MonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		892B4523987393E34C91AF65 /* Pods-Darwin Event MonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darwin Event MonitorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Darwin Event MonitorUITests/Pods-Darwin Event MonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8D5E21EE3C83464BBDC508BE /* Pods_Darwin_Event_MonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Darwin_Event_MonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9568008A754B0EA656576848 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB101FDD082DBCF5AAD2E80 /* Pods_Darwin_Event_MonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Darwin_Event_MonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF737D86B0D5348EE0571E7 /* Pods-Darwin Event MonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darwin Event MonitorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Darwin Event MonitorUITests/Pods-Darwin Event MonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD853ABED7C6D70A2A8FEA5D /* Pods-Darwin Event MonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darwin Event MonitorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Darwin Event MonitorTests/Pods-Darwin Event MonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEBE61EA81C950A0B895F9EC /* Pods-Darwin Event Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darwin Event Monitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Darwin Event Monitor/Pods-Darwin Event Monitor.release.xcconfig"; sourceTree = "<group>"; };
+		C64FEE4C11007B3C43D0BE9E /* Pods-Darwin Event Monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darwin Event Monitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Darwin Event Monitor/Pods-Darwin Event Monitor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BC557A1C124C9500CAB753 /* PFAssistive.framework in Frameworks */,
-				18179EF4ECC42795E4718AEE /* Pods.framework in Frameworks */,
+				57FEB897B1C3BEC699D4243A /* Pods_Darwin_Event_Monitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BC557B1C124C9500CAB753 /* PFAssistive.framework in Frameworks */,
+				F4FAA14DDBB6B56D3CC154F2 /* Pods_Darwin_Event_MonitorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B301E671850C9C7FCD5B0904 /* Pods_Darwin_Event_MonitorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +115,8 @@
 				04AB2D461BFECFFE005AB924 /* Darwin Event Monitor Tests */,
 				04AB2D511BFECFFE005AB924 /* Darwin Event MonitorUITests */,
 				04AB2D331BFECFFE005AB924 /* Products */,
-				F97B89CC00854055D3AFE770 /* Pods */,
 				D19E223FD6DE2BF402750726 /* Frameworks */,
+				84919941449B1118BEC8E1B8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,22 +164,29 @@
 			path = "VoiceCode MonitorUITests";
 			sourceTree = "<group>";
 		};
+		84919941449B1118BEC8E1B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C64FEE4C11007B3C43D0BE9E /* Pods-Darwin Event Monitor.debug.xcconfig */,
+				BEBE61EA81C950A0B895F9EC /* Pods-Darwin Event Monitor.release.xcconfig */,
+				AD853ABED7C6D70A2A8FEA5D /* Pods-Darwin Event MonitorTests.debug.xcconfig */,
+				482DEADB4BFA3539396713C4 /* Pods-Darwin Event MonitorTests.release.xcconfig */,
+				ACF737D86B0D5348EE0571E7 /* Pods-Darwin Event MonitorUITests.debug.xcconfig */,
+				892B4523987393E34C91AF65 /* Pods-Darwin Event MonitorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D19E223FD6DE2BF402750726 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				04BC55791C124C9500CAB753 /* PFAssistive.framework */,
 				9568008A754B0EA656576848 /* Pods.framework */,
+				1C30C168BD182C97E3F47266 /* Pods_Darwin_Event_Monitor.framework */,
+				8D5E21EE3C83464BBDC508BE /* Pods_Darwin_Event_MonitorTests.framework */,
+				ACB101FDD082DBCF5AAD2E80 /* Pods_Darwin_Event_MonitorUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F97B89CC00854055D3AFE770 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				77E374E6D55ADF41DBA90E31 /* Pods.debug.xcconfig */,
-				37E92B471FF6751F71F7D0DE /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,13 +196,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04AB2D571BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event Monitor" */;
 			buildPhases = (
-				198D2EBB3D93E01E9BE696C4 /* Check Pods Manifest.lock */,
+				6C86BB224A293652626C56CD /* [CP] Check Pods Manifest.lock */,
 				04AB2D2E1BFECFFE005AB924 /* Sources */,
-				C0F20F67707B4A913BF26AC6 /* Embed Pods Frameworks */,
-				47E4F2642A28686DDFE8E8D3 /* Copy Pods Resources */,
 				049AB6FD1C2A5FF00060689D /* CopyFiles */,
 				04AB2D301BFECFFE005AB924 /* Resources */,
 				04AB2D2F1BFECFFE005AB924 /* Frameworks */,
+				7A4E7769E96B184D126BF3AE /* [CP] Embed Pods Frameworks */,
+				14DB2A5ED87B05241366C5B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04AB2D5A1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event MonitorTests" */;
 			buildPhases = (
+				035BEFD794CF3D31C68AC1CF /* [CP] Check Pods Manifest.lock */,
 				04AB2D3F1BFECFFE005AB924 /* Sources */,
 				04AB2D401BFECFFE005AB924 /* Frameworks */,
 				04AB2D411BFECFFE005AB924 /* Resources */,
+				9D7220357E290CA6A8D69AEF /* [CP] Embed Pods Frameworks */,
+				BD6CD3B8F7978EB632CB9472 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,9 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04AB2D5D1BFECFFE005AB924 /* Build configuration list for PBXNativeTarget "Darwin Event MonitorUITests" */;
 			buildPhases = (
+				CC24B96ECF872A443E6253C3 /* [CP] Check Pods Manifest.lock */,
 				04AB2D4A1BFECFFE005AB924 /* Sources */,
 				04AB2D4B1BFECFFE005AB924 /* Frameworks */,
 				04AB2D4C1BFECFFE005AB924 /* Resources */,
+				7E4711BD9ABB2D986DD871D1 /* [CP] Embed Pods Frameworks */,
+				0097D03BB064B5F17F7222EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,18 +262,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = VoiceCode;
 				TargetAttributes = {
 					04AB2D311BFECFFE005AB924 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 					};
 					04AB2D421BFECFFE005AB924 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 04AB2D311BFECFFE005AB924;
 					};
 					04AB2D4D1BFECFFE005AB924 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 04AB2D311BFECFFE005AB924;
 					};
 				};
@@ -301,49 +328,139 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		198D2EBB3D93E01E9BE696C4 /* Check Pods Manifest.lock */ = {
+		0097D03BB064B5F17F7222EA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Darwin Event MonitorUITests/Pods-Darwin Event MonitorUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47E4F2642A28686DDFE8E8D3 /* Copy Pods Resources */ = {
+		035BEFD794CF3D31C68AC1CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C0F20F67707B4A913BF26AC6 /* Embed Pods Frameworks */ = {
+		14DB2A5ED87B05241366C5B7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Darwin Event Monitor/Pods-Darwin Event Monitor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C86BB224A293652626C56CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4E7769E96B184D126BF3AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Darwin Event Monitor/Pods-Darwin Event Monitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E4711BD9ABB2D986DD871D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Darwin Event MonitorUITests/Pods-Darwin Event MonitorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7220357E290CA6A8D69AEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Darwin Event MonitorTests/Pods-Darwin Event MonitorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6CD3B8F7978EB632CB9472 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Darwin Event MonitorTests/Pods-Darwin Event MonitorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC24B96ECF872A443E6253C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,8 +531,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -458,8 +577,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -478,12 +599,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		04AB2D581BFECFFE005AB924 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77E374E6D55ADF41DBA90E31 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C64FEE4C11007B3C43D0BE9E /* Pods-Darwin Event Monitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -500,12 +622,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.voicecode.darwin-monitor";
 				PRODUCT_NAME = "Darwin Event Monitor";
 				SWIFT_OBJC_BRIDGING_HEADER = "VoiceCode Monitor/DarwinEventMonitor-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		04AB2D591BFECFFE005AB924 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37E92B471FF6751F71F7D0DE /* Pods.release.xcconfig */;
+			baseConfigurationReference = BEBE61EA81C950A0B895F9EC /* Pods-Darwin Event Monitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -522,11 +645,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.voicecode.darwin-monitor";
 				PRODUCT_NAME = "Darwin Event Monitor";
 				SWIFT_OBJC_BRIDGING_HEADER = "VoiceCode Monitor/DarwinEventMonitor-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
 		04AB2D5B1BFECFFE005AB924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD853ABED7C6D70A2A8FEA5D /* Pods-Darwin Event MonitorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -538,12 +663,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";
 				PRODUCT_NAME = "Darwin Event Monitor";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin Event Monitor.app/Contents/MacOS/Darwin Event Monitor";
 			};
 			name = Debug;
 		};
 		04AB2D5C1BFECFFE005AB924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482DEADB4BFA3539396713C4 /* Pods-Darwin Event MonitorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -555,18 +682,21 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorTests";
 				PRODUCT_NAME = "Darwin Event Monitor";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwin Event Monitor.app/Contents/MacOS/Darwin Event Monitor";
 			};
 			name = Release;
 		};
 		04AB2D5E1BFECFFE005AB924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF737D86B0D5348EE0571E7 /* Pods-Darwin Event MonitorUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "VoiceCode MonitorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorUITests";
 				PRODUCT_NAME = "Darwin Event Monitor";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "VoiceCode Monitor";
 				USES_XCTRUNNER = YES;
 			};
@@ -574,12 +704,14 @@
 		};
 		04AB2D5F1BFECFFE005AB924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892B4523987393E34C91AF65 /* Pods-Darwin Event MonitorUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "VoiceCode MonitorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "voicecode.io.VoiceCode-MonitorUITests";
 				PRODUCT_NAME = "Darwin Event Monitor";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "VoiceCode Monitor";
 				USES_XCTRUNNER = YES;
 			};

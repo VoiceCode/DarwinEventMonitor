@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "c0ddad21f74c2b95e14d29659e4bac08"
+build_time: [528981725, 106279000]
+inputs:
+  "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/VoiceCode Monitor/ViewController.swift": [9223372036854775807, 0]
+  "/Users/triumph/projects/voiceCode/DarwinEventMonitor/DarwinEventMonitor/VoiceCode Monitor/AppDelegate.swift": [9223372036854775807, 0]

@@ -1,0 +1,6 @@
+framework module Pods_Darwin_Event_Monitor {
+  umbrella header "Pods-Darwin Event Monitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
