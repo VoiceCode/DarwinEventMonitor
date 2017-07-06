@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSEvent.addGlobalMonitorForEventsMatchingMask(.RightMouseUp, handler: self.rightClickUpHandler)
         NSEvent.addGlobalMonitorForEventsMatchingMask(.KeyUp, handler: self.keyUpHandler)
 //        self.startObservingDragon()
-//        self.observeActivity()
+        self.observeActivity()
     }
     
     func startObservingDragon() {
@@ -73,12 +73,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let result: JSON = [
             "event": "uiState",
             "currentWindow": self.windowInfo(window),
-//            "focusedElement": self.elementInfo(focused),
+            "focusedElement": self.elementInfo(focused),
 //            "fileName": String(focused?.AXFilename ?? ""),
             "windows": windowData,
 //            "AXInsertionPointLineNumber": String(focused?.AXInsertionPointLineNumber ?? ""),
 //            "AXWindows": String(focused?.AXWindows ?? ""),
         ]
+        print(result)
         
         self.send(result)
     }
@@ -168,7 +169,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 "placeholder": self.string(element?.AXPlaceholderValue),
 //                "attributes": (element?.attributes())!,
             ]
-            
             return elementData.object
         } else {
             return []

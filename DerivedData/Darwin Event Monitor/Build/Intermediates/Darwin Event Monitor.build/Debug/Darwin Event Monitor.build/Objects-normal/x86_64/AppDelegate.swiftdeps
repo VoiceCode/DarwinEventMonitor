@@ -6,78 +6,78 @@ provides-nominal:
 provides-member:
 - ["C20Darwin_Event_Monitor11AppDelegate", ""]
 provides-dynamic-lookup:
-- "startObservingDragon"
-- "boolean"
-- "string"
-- "leftClickHandler"
-- "findRecognizedTextElement"
-- "nc"
-- "elementInfo"
-- "applicationDidFinishLaunching"
-- "findDragonStatusWindow"
-- "applicationWillTerminate"
-- "applicationActivated"
-- "observeActivity"
-- "rightClickUpHandler"
-- "applicationIsRunning"
-- "sendToVoiceCode"
-- "windowInfo"
-- "observeDragonStatusWindow"
-- "leftClickUpHandler"
-- "keyUpHandler"
-- "top"
 - "recognizedTextChanged"
-- "checkActiveElement"
+- "applicationWillTerminate"
+- "rightClickUpHandler"
+- "observeDragonStatusWindow"
+- "applicationDidFinishLaunching"
+- "findRecognizedTextElement"
 - "toJson"
+- "findDragonStatusWindow"
+- "startObservingDragon"
+- "leftClickHandler"
+- "boolean"
+- "sendToVoiceCode"
+- "applicationActivated"
 - "exec"
+- "checkActiveElement"
+- "keyUpHandler"
+- "string"
+- "applicationIsRunning"
+- "windowInfo"
+- "leftClickUpHandler"
+- "nc"
+- "top"
+- "elementInfo"
+- "observeActivity"
 depends-top-level:
-- "PFObserver"
-- "NSEvent"
-- !private "PFApplicationUIElement"
-- !private "Array"
-- !private "!="
-- !private "*"
-- "PFUIElement"
-- !private "Int"
-- !private "NSPipe"
-- !private "BooleanLiteralType"
-- !private "Int64"
-- !private "+="
-- "JSON"
-- "NSObject"
+- !private "NSError"
 - "NSNumber"
-- !private "dispatch_after"
-- "AppDelegate"
-- "NSPoint"
-- !private "UnicodeScalarType"
-- "NSNotification"
-- !private "NSUTF8StringEncoding"
+- !private ">"
+- !private "!="
+- !private "&&"
+- !private "DISPATCH_TIME_NOW"
+- "NSString"
+- !private "BooleanLiteralType"
 - !private "dispatch_get_main_queue"
-- !private "print"
-- !private "NSEC_PER_SEC"
+- !private "*"
 - !private "kAXValueChangedNotification"
 - "String"
-- !private "StringLiteralType"
-- "DarwinBoolean"
-- "AnyObject"
-- !private "NSWorkspaceDidActivateApplicationNotification"
-- "NSApplicationDelegate"
-- "NSRange"
 - "NSSize"
-- !private "&&"
-- !private "??"
-- !private ">"
-- !private "NSJSONSerialization"
-- !private "<"
-- !private "NSError"
-- !private "NSWorkspace"
-- !private "NSJSONWritingOptions"
-- !private "Dictionary"
 - !private "NSTask"
+- !private "NSPipe"
+- !private "Int"
+- !private "dispatch_after"
+- "NSEvent"
+- !private "Int64"
+- "NSPoint"
+- !private "<"
+- "AnyObject"
+- !private "UnicodeScalarType"
+- "AppDelegate"
+- !private "StringLiteralType"
+- !private "+="
+- !private "NSWorkspaceDidActivateApplicationNotification"
+- !private "NSJSONSerialization"
+- !private "NSJSONWritingOptions"
+- !private "Array"
+- "JSON"
+- "NSNotification"
+- !private "print"
+- "NSApplicationDelegate"
+- "PFObserver"
+- !private "Dictionary"
+- !private "NSEC_PER_SEC"
+- !private "PFApplicationUIElement"
+- "PFUIElement"
+- !private "NSUTF8StringEncoding"
+- "NSRange"
+- "DarwinBoolean"
 - !private "dispatch_time"
-- "NSString"
+- !private "??"
 - !private "=="
-- !private "DISPATCH_TIME_NOW"
+- !private "NSWorkspace"
+- "NSObject"
 depends-member:
 - !private ["Ps9AnyObject", "AXChildren"]
 - !private ["Ps9AnyObject", "AXDescription"]
@@ -100,7 +100,6 @@ depends-member:
 - !private ["Ps9AnyObject", "AXWindows"]
 - !private ["Ps9AnyObject", "AnyObject"]
 - !private ["Ps9AnyObject", "AppDelegate"]
-- !private ["Ps9AnyObject", "CGEvent"]
 - !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
 - !private ["Ps9AnyObject", "Element"]
 - !private ["Ps9AnyObject", "Int"]
@@ -376,7 +375,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "AXWindows"]
 - !private ["Ps11CVarArgType", "AnyObject"]
 - !private ["Ps11CVarArgType", "AppDelegate"]
-- !private ["Ps11CVarArgType", "CGEvent"]
 - !private ["Ps11CVarArgType", "DISPATCH_TIME_NOW"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "Element"]
@@ -534,7 +532,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "AXWindows"]
 - !private ["Ps28CustomDebugStringConvertible", "AnyObject"]
 - !private ["Ps28CustomDebugStringConvertible", "AppDelegate"]
-- !private ["Ps28CustomDebugStringConvertible", "CGEvent"]
 - !private ["Ps28CustomDebugStringConvertible", "DISPATCH_TIME_NOW"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
@@ -595,7 +592,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "closeFile"]
 - !private ["Ps28CustomDebugStringConvertible", "dataUsingEncoding"]
 - !private ["Ps28CustomDebugStringConvertible", "dataWithJSONObject"]
-- !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_after"]
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_get_main_queue"]
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_time"]
@@ -674,7 +670,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "AXWindows"]
 - !private ["Ps23CustomStringConvertible", "AnyObject"]
 - !private ["Ps23CustomStringConvertible", "AppDelegate"]
-- !private ["Ps23CustomStringConvertible", "CGEvent"]
 - !private ["Ps23CustomStringConvertible", "DISPATCH_TIME_NOW"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Element"]
@@ -826,7 +821,6 @@ depends-member:
 - !private ["Ps9Equatable", "AXWindows"]
 - !private ["Ps9Equatable", "AnyObject"]
 - !private ["Ps9Equatable", "AppDelegate"]
-- !private ["Ps9Equatable", "CGEvent"]
 - !private ["Ps9Equatable", "Command"]
 - !private ["Ps9Equatable", "Control"]
 - !private ["Ps9Equatable", "DISPATCH_TIME_NOW"]
@@ -994,7 +988,6 @@ depends-member:
 - !private ["Ps8Hashable", "AXWindows"]
 - !private ["Ps8Hashable", "AnyObject"]
 - !private ["Ps8Hashable", "AppDelegate"]
-- !private ["Ps8Hashable", "CGEvent"]
 - !private ["Ps8Hashable", "DISPATCH_TIME_NOW"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "Element"]
@@ -1235,6 +1228,7 @@ depends-member:
 - !private ["PSo21NSApplicationDelegate", "dispatch_after"]
 - !private ["PSo21NSApplicationDelegate", "dispatch_get_main_queue"]
 - !private ["PSo21NSApplicationDelegate", "dispatch_time"]
+- !private ["PSo21NSApplicationDelegate", "elementInfo"]
 - !private ["PSo21NSApplicationDelegate", "findDragonStatusWindow"]
 - !private ["PSo21NSApplicationDelegate", "findRecognizedTextElement"]
 - !private ["PSo21NSApplicationDelegate", "kAXValueChangedNotification"]
@@ -1259,7 +1253,6 @@ depends-member:
 - !private ["PSo21NSApplicationDelegate", "windowInfo"]
 - ["PSo21NSApplicationDelegate", ""]
 - !private ["CSo7NSArray", "Element"]
-- !private ["PSo8NSCoding", "CGEvent"]
 - !private ["PSo8NSCoding", "Element"]
 - !private ["PSo8NSCoding", "Key"]
 - !private ["PSo8NSCoding", "Value"]
@@ -1300,7 +1293,6 @@ depends-member:
 - !private ["PSo9NSCopying", "AXValueDescription"]
 - !private ["PSo9NSCopying", "AXVisibleCharacterRange"]
 - !private ["PSo9NSCopying", "AXWindows"]
-- !private ["PSo9NSCopying", "CGEvent"]
 - !private ["PSo9NSCopying", "Element"]
 - !private ["PSo9NSCopying", "Key"]
 - !private ["PSo9NSCopying", "Value"]
@@ -1324,7 +1316,6 @@ depends-member:
 - !private ["PSo9NSCopying", "windowNumber"]
 - !private ["CSo12NSDictionary", "Key"]
 - !private ["CSo12NSDictionary", "Value"]
-- !private ["CSo7NSEvent", "CGEvent"]
 - !private ["CSo7NSEvent", "addGlobalMonitorForEventsMatchingMask"]
 - !private ["CSo7NSEvent", "clickCount"]
 - !private ["CSo7NSEvent", "keyCode"]
@@ -1384,7 +1375,6 @@ depends-member:
 - !private ["CSo8NSObject", "AXWindows"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "AppDelegate"]
-- !private ["CSo8NSObject", "CGEvent"]
 - !private ["CSo8NSObject", "DISPATCH_TIME_NOW"]
 - ["CSo8NSObject", "DarwinBoolean"]
 - !private ["CSo8NSObject", "Element"]
@@ -1526,7 +1516,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "AXWindows"]
 - !private ["PSo16NSObjectProtocol", "AnyObject"]
 - !private ["PSo16NSObjectProtocol", "AppDelegate"]
-- !private ["PSo16NSObjectProtocol", "CGEvent"]
 - !private ["PSo16NSObjectProtocol", "DISPATCH_TIME_NOW"]
 - !private ["PSo16NSObjectProtocol", "Element"]
 - !private ["PSo16NSObjectProtocol", "Int"]
@@ -1675,7 +1664,6 @@ depends-member:
 - !private ["Ps21NilLiteralConvertible", "Key"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps21NilLiteralConvertible", "Value"]
-- !private ["Ps21NilLiteralConvertible", "debugDescription"]
 - !private ["Ps21NilLiteralConvertible", "object"]
 - !private ["Ps21NilLiteralConvertible", "rawString"]
 - !private ["Ps13OptionSetType", "Command"]
@@ -1690,7 +1678,6 @@ depends-member:
 - !private ["Ps13OptionSetType", "Shift"]
 - !private ["Ps13OptionSetType", "contains"]
 - ["Sq", "Some"]
-- !private ["Sq", "debugDescription"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "dataUsingEncoding"]
 - !private ["Ps16OutputStreamType", "init"]
@@ -1916,7 +1903,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "append"]
 - !private ["Ps12_Reflectable", "dataUsingEncoding"]
-- !private ["Ps12_Reflectable", "debugDescription"]
 - !private ["Ps12_Reflectable", "height"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "length"]
